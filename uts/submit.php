@@ -11,7 +11,7 @@
 <body>
     <div class="result">
         <div class="result-header">
-            <h1>Data Pemantauan COVID19 Wilayah <?php echo $_POST["wilayah"]; ?> <br>
+            <p>Data Pemantauan COVID19 Wilayah <?php echo $_POST["wilayah"]; ?> <br>
                 <?php $tanggal = new DateTime('now', new DateTimezone('Asia/Jakarta')); ?>
                 Per <?php echo $tanggal->format("d-F-y H:i:s"); ?> <br>
                 <?php echo $_POST['nama']; ?>
@@ -31,7 +31,7 @@
                 <th><?php echo $_POST["meninggal"]; ?></th>
             </tr>
         </table>
-        </h1>
+        </p>
     </div>
     <?php
     $wilayah = $_POST["wilayah"];
